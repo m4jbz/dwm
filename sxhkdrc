@@ -1,0 +1,110 @@
+
+##################################################################################################################################################################################################
+
+#Suspend system
+super + shift + F9
+	systemctl suspend 
+	
+#Shutdown system
+super + shift + F10
+	shutdown now
+
+#Reboot system
+super + shift + F8
+	reboot
+
+#Xkill
+super + shift + Escape
+    xkill
+
+##################################################################################################################################################################################################
+
+#Bookmarks
+super + F11
+	xdotool type $(grep -v '^#' ~/.local/share/bookmarks/snippets | dmenu -i -l 50 | cut -d' ' -f1)
+
+#MuPDF
+super + p  
+	mupdf Documents/LaTeX/algebra.pdf
+
+#Browser
+super + w
+    firefox
+
+#Appearance
+super + c
+    lxappearance
+
+#Rofi (apps)
+super + r
+    rofi -show drun
+
+#Tor
+super + t
+    torbrowser-launcher
+
+#Terminal
+super + Return
+    st
+
+#OBS
+super + i
+    obs
+    
+#File-Manager
+super + shift + Return
+	st -e ranger
+
+#Musica
+super + shift + m
+	st -e ranger /media/Music
+
+##################################################################################################################################################################################################
+
+#Reload sxhkd:
+super + shift + s
+	pkill -USR1 -x sxhkd
+
+#Screeenshooter
+ctrl + Print
+     xfce4-screenshooter
+
+#Raises volume
+XF86AudioRaiseVolume
+    amixer set Master 2%+
+
+#Lowers volume
+XF86AudioLowerVolume
+    amixer set Master 2%-
+
+#Mute
+XF86AudioMute
+  /usr/bin/amixer set Master toggle 
+
+#PLAY
+XF86AudioPlay
+    playerctl play-pause
+
+#Next
+XF86AudioNext
+    playerctl next
+
+#previous
+XF86AudioPrev
+    playerctl previous
+
+#Stop
+XF86AudioStop
+    playerctl stop
+
+#Brightness up
+XF86MonBrightnessUp
+    brightnessctl set +10%
+
+#Brightness down
+XF86MonBrightnessDown
+    brightnessctl set 10%-
+
+#Picom Toggle
+ctrl + alt + o
+    ~/.config/qtile/scripts/picom-toggle.sh
