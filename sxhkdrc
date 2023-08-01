@@ -35,10 +35,6 @@ super + w
 super + c
     lxappearance
 
-#Rofi (apps)
-super + r
-    rofi -show drun
-
 #Tor
 super + t
     torbrowser-launcher

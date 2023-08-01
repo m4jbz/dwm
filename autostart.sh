@@ -21,5 +21,5 @@ run xfce4-power-manager &
 run nm-applet &
 run volumeicon &
 run cbatticon &
-/bin/sh ~/xroot.sh &
+run dwmblocks &
 picom --config $HOME/Documents/Picom/picom.conf &
