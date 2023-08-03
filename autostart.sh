@@ -21,6 +21,6 @@ run xfce4-power-manager &
 run nm-applet &
 run volumeicon &
 run cbatticon &
-run setxkbmap &
+run setxkbmap latam &
 run dwmblocks &
 picom --config $HOME/Documents/Picom/picom.conf &
