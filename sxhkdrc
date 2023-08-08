@@ -23,10 +23,6 @@ super + shift + Escape
 super + F11
 	xdotool type $(grep -v '^#' ~/.local/share/bookmarks/snippets | dmenu -i -l 50 | cut -d' ' -f1)
 
-#MuPDF
-super + p  
-	mupdf Documents/LaTeX/algebra.pdf
-
 #Browser
 super + w
     firefox
@@ -49,11 +45,11 @@ super + i
     
 #File-Manager
 super + shift + Return
-	st -e ranger
+	st -e lfrun
 
 #Musica
 super + shift + m
-	st -e ranger /media/Music
+	st -e lfrun /media/Music
 
 ##################################################################################################################################################################################################
 

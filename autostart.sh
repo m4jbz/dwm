@@ -11,7 +11,7 @@ function run {
 keybLayout=$(setxkbmap -v | awk -F "+" '/symbols/ {print $2}')
 
 ##Wallaper
-feh --bg-fill ~/Pictures/Wallpapers/003.png
+feh --bg-fill ~/Media/Pictures/Wallpapers/003.png
 
 #Los key bindings
 run sxhkd -c ~/.local/suckless/dwm/sxhkdrc &
