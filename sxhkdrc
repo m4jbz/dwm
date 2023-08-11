@@ -31,6 +31,10 @@ super + w
 super + c
     lxappearance
 
+#GTA Vice City
+super + shift + w
+	 wine /media/Games/Grand\ Theft\ Auto\ Vice\ City/gta-vc.exe
+
 #Tor
 super + t
     torbrowser-launcher
