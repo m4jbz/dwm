@@ -11,7 +11,7 @@ function run {
 keybLayout=$(setxkbmap -v | awk -F "+" '/symbols/ {print $2}')
 
 ##Wallaper
-feh --bg-fill ~/Media/Pictures/Wallpapers/019.jpg
+feh --bg-fill ~/Media/Pictures/Wallpapers/012.png
 
 #Los key bindings
 run sxhkd -c ~/.local/suckless/dwm/sxhkdrc &
@@ -22,5 +22,6 @@ run nm-applet &
 run volumeicon &
 run cbatticon &
 run setxkbmap latam &
-run dwmblocks &
+#run dwmblocks &
+run slstatus &
 picom --config $HOME/Documents/Picom/picom.conf &

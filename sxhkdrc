@@ -21,19 +21,19 @@ super + shift + Escape
 
 #Bookmarks
 super + F11
-	xdotool type $(grep -v '^#' ~/.local/share/bookmarks/snippets | dmenu -i -l 50 | cut -d' ' -f1)
+	xdotool type $(grep -v '^#' ~/.local/share/bookmarks/snippets | dmenu -i -l 20 | cut -d' ' -f1)
 
 #Browser
 super + w
     firefox
 
+#Rofi
+super + r 
+	rofi -show drun
+
 #Appearance
 super + c
     lxappearance
-
-#GTA Vice City
-super + shift + w
-	 wine /media/Games/Grand\ Theft\ Auto\ Vice\ City/gta-vc.exe
 
 #Tor
 super + t
@@ -51,9 +51,9 @@ super + i
 super + shift + Return
 	st -e lfrun
 
-#Musica
-super + shift + m
-	st -e lfrun /media/Music
+#NVIM
+super + shift + n 
+	st -e nvim
 
 ##################################################################################################################################################################################################
 
