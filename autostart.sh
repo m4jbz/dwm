@@ -20,8 +20,7 @@ run sxhkd -c ~/.local/suckless/dwm/sxhkdrc &
 run xfce4-power-manager &
 run nm-applet &
 run volumeicon &
-run cbatticon &
 run setxkbmap latam &
 #run dwmblocks &
 run slstatus &
-picom --config $HOME/Documents/Picom/picom.conf &
+picom --config $HOME/.config/picom/picom.conf &

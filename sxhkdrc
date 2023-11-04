@@ -5,10 +5,6 @@
 super + shift + F9
 	systemctl suspend 
 	
-#Shutdown system
-super + shift + F10
-	shutdown now
-
 #Reboot system
 super + shift + F8
 	systemctl hibernate
@@ -75,11 +71,11 @@ ctrl + Print
 
 #Raises volume
 XF86AudioRaiseVolume
-    amixer set Master 2%+
+    amixer set Master 5%+
 
 #Lowers volume
 XF86AudioLowerVolume
-    amixer set Master 2%-
+    amixer set Master 5%-
 
 #Mute
 XF86AudioMute
