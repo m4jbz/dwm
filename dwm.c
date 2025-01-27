@@ -162,6 +162,13 @@ typedef struct {
 	int monitor;
 } Rule;
 
+typedef struct Systray   Systray;
+struct Systray {
+	Window win;
+	Client *icons;
+};
+
+
 /* Xresources preferences */
 enum resource_type {
 	STRING = 0,
